@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+$text-black: #1E2124;
+$text-dark-gray:#656A72;
+$text-light-gray:#AEB2B8;
+$light-blue:#DAF7FF;
+$light-pink:#FAE4F1;
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	color: $text-dark-gray;
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	max-width: 1080px;
+	width: 90%;
+	margin: 1.5em auto;
+	display: flex;
+	justify-content: space-around;
+
+	.logo {
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+
+	.navbar {
+		width: 70%;
+		align-self: center;
+		text-align: center;
+
+		.nav-links {
+
+			display: inline-block;
+			padding: 0 .5em;
+		}
+	}
+
+	.contact-cta {
+		height: 100%;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		
+		.contact-icon {
+		 height: 70%;
+		 margin-right: .5em;
+		}
+
+		span.contact-text {
+			font-size: 1.2em;
+			color: $text-black;
+			margin-bottom: .2em;
+		}
+	}
+
+}
+
+.banner-container {
+	width: 90%;
+	margin: auto;
+	position: relative;
+	max-width:1080px;
+
+
+
+	.banner {
+	width: 100%;
+	height: 30em;
+	
+	margin: 0 auto;
+	display: flex;
+	background-color: $light-blue;
+	position: absolute;
+	
+    .banner-main {
+    	width: 70%;
+    	height: 100%;
+    	position: absolute;
+    	display: flex;
+
+    	.banner-text-box {
+    			position: absolute;
+    			left: 50%;
+    			top: 50%;
+    			transform: translate(-50%, -50%);
+    			width: auto;
+
+    			ul {
+    				margin-top: 1em;
+    				font-size: 1.2rem;
+    			}
+    		}
+
+
+    	.insta-section{
+    		width: 4em;
+    		height: 30em;
+    		position: absolute;
+
+    		img{
+    			width: 100%;
+    			position: absolute;
+    			bottom: 0;
+    			box-shadow: 5px -5px 100px skyblue;
+    			overflow: hidden;
+    		}
+
+    		h5 {
+    		   
+				position: absolute;
+				top: 13em;
+				width: 13em;
+				color: $text-light-gray;
+				left: -4.8em;
+				font-size: 1.2em;
+				transform: rotate(270deg);
+
+
+
+
+    		}
+    		
+
+    		
+
+    	}
+    	
+    }
+    .banner-img {
+    	height: 100%;
+    	width: 30%;
+    	align-items: flex-end;
+    	background-color: $light-pink;
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+
+    	img{
+    		height: 90%;
+    		position: absolute;
+    		top: 2.8em;
+    		left: -8em;
+    	}
+    }
+
+}
+}
+
+
+
+
+
+
+
+
